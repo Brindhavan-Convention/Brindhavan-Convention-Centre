@@ -24,6 +24,8 @@ body {
 .navbar-logo-txt {
     font-weight: 450;
     color: #3E3E3E;
+    font-size: 30px;
+    text-decoration: underline;
 }
 
 .navbar-nav>li>a {
@@ -191,7 +193,7 @@ img {
 }
 
 #title{
-    font-size: 50px;
+    font-size: 30px;
 }
 
 .w-100{
