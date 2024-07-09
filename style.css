@@ -48,6 +48,7 @@ body {
     font-weight: bold;
     border-radius: 5px;
     transition: .4s;
+    padding: .5rem 1rem; /* Ensure padding for all screen sizes */
 }
 
 .white-btn:hover {
@@ -56,7 +57,7 @@ body {
 }
 
 .img-fluid {
-    max-width: 80%;
+    max-width: 100%;
     height: auto;
 }
 
@@ -119,17 +120,6 @@ body {
     background-color: black;
 }
 
-@media only screen and (max-width: 400px) {
-    .carousel-item {
-        height: 40vh;
-    }
-
-    .carousel-item img {
-        height: 100%;
-    }
-}
-
-
 .contact-info {
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -167,20 +157,18 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: center;
-   
     flex: 0 0 auto;
 }
 
-.banner{
+.banner {
     width: 100%;
-    height:700px;
+    height: 700px;
 }
 
 img {
     width: 100%;
     height: auto;
     border-radius: 5px;
-
 }
 
 @keyframes scrollGallery {
@@ -192,10 +180,64 @@ img {
     }
 }
 
-#title{
+
+#title {
     font-size: 30px;
+    text-align: center; /* Center-align title for better visibility */
 }
 
-.w-100{
-    height:50%;
+.w-100 {
+    height: 50%;
+}
+
+/* Media queries for responsive design */
+
+@media (max-width: 768px) {
+    .navbar-logo-txt {
+        font-size: 24px;
+    }
+
+    .navbar-nav>li>a {
+        padding: 0.5rem;
+    }
+
+    .footer {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .banner {
+        height: 50vh; /* Adjust banner height for smaller screens */
+    }
+
+    #title {
+        font-size: 24px; /* Smaller font size for mobile */
+    }
+}
+
+@media (max-width: 400px) {
+    .carousel-item {
+        height: 40vh;
+    }
+
+    .carousel-item img {
+        height: 100%;
+    }
+
+    .white-btn,
+    .black-btn,
+    .pink-btn {
+        padding: .5rem; /* Adjust padding for smaller buttons on mobile */
+        font-size: 14px; /* Smaller font size for buttons on mobile */
+    }
+}
+
+@media (min-width: 1024px) {
+    .img-fluid {
+        max-width: 80%; /* Adjust image size for larger screens */
+    }
+
+    .banner {
+        height: 700px; /* Keep banner height larger for desktop */
+    }
 }
