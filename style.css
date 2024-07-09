@@ -17,6 +17,11 @@ body {
     font-family: 'Noto Sans Adlam Unjoined', sans-serif;
 }
 
+
+.head-con{
+    display: block;
+}
+
 .navbar {
     z-index: 5;
 }
@@ -212,6 +217,10 @@ img {
 
     #title {
         font-size: 24px; /* Smaller font size for mobile */
+
+    }
+    .head-con{
+        display: block;
     }
 }
 
@@ -229,6 +238,9 @@ img {
     .pink-btn {
         padding: .5rem; /* Adjust padding for smaller buttons on mobile */
         font-size: 14px; /* Smaller font size for buttons on mobile */
+    }
+    .head-con{
+        display: block;
     }
 }
 
